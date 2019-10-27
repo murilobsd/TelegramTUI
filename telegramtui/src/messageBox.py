@@ -2,7 +2,10 @@ import textwrap
 import os.path
 from telegramtui.src import npyscreen
 from telegramtui.src.telegramApi import client
-from telegramtui.src import aalib
+try:
+    from telegramtui.src import aalib
+except ImportError:
+    print("Not found aalib")
 from PIL import Image
 
 
